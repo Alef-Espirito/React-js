@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './components/pages/Home';
+import Clientes from './components/pages/Clientes';
+import NovoFornecedor from './components/pages/NovoFornecedor';
+import Fornecedores from './components/pages/Fornecedores';
+import Form from './components/project/ProjectForm';
+
+import Container from './components/layout/Container';
+
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Detalhes from './components/pages/Detalhes';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    
+    <Router>
+      <Navbar/>      
+        <Switch>
+          <Container customClass="minHeight">  
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route exact path="/fornecedores">
+              <Fornecedores/>
+            </Route>
+            <Route exact path="/clientes">
+              <Clientes/>
+            </Route>
+            <Route exact path="/novofornecedor">
+              <NovoFornecedor/>
+            </Route>
+            <Route exact path="/form">
+              <Form/>
+            </Route>
+            <Route exact path="/detalhes">
+              <Detalhes/>
+            </Route>
+          </Container>
+        </Switch>      
+      <Footer/>
+    </Router>
   );
 }
 

@@ -1,0 +1,16 @@
+.footer{
+    background-color: #222;
+    color:white;
+    padding: 0.3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+
+.copy_Right samp{
+    color: #FFBB33;
+    font-weight: bold;
+}

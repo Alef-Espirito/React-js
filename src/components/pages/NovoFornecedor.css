@@ -1,0 +1,12 @@
+.novofornecedor{
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+    
+}
+
+.novofornecedor h1{
+
+    position: absolute;
+    margin-bottom: 0.5em;
+}

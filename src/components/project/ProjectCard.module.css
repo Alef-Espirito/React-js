@@ -1,0 +1,73 @@
+.project_card{
+    padding: 1em;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    width: 21%;
+    margin: 0.5%;
+}
+
+.project_card h4{
+    background-color: #222;
+    color: #FFBB33;
+    padding: .4em;
+    margin-bottom: 1.3em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.project_card p{
+    color: #222;
+    margin-bottom: 1em;
+}
+
+.project_card p span{
+    font-weight: bold;
+}
+
+.project_card_ctions{
+    margin-top: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.project_card_ctions a{
+    text-decoration: none;
+    border: none;
+    background-color: #FFF;
+    color: #222;
+    font-size: .9em;
+    padding: .5em 0.9em;
+    margin-left: 1.5em;
+    margin-right: 2em;
+    cursor: pointer;
+    border: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.project_card_ctions button{
+    text-decoration: none;
+    border: none;
+    background-color: #FFF;
+    color: #222;
+    font-size: .9em;
+    padding: .6em 0.9em;
+    cursor: pointer;
+    border: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.project_card_ctions svg{
+    margin-right: .5em;
+}
+
+.project_card_ctions a:hover,
+.project_card_ctions button:hover{
+    background-color: #222;
+    color: #FFBB33;
+}

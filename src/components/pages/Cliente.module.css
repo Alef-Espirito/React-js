@@ -1,0 +1,9 @@
+.project_container{
+   padding: 0.2em;
+}
+
+.title_container{
+   justify-content: space-between;
+   margin: 1em;
+
+}
